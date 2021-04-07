@@ -1,0 +1,34 @@
+.side-nav {    
+    width: min(20vw, 350px);
+    min-height: 100vh;
+    height: auto;
+    background-color: rgba(0,0,0,.9);;     
+    white-space: nowrap;    
+    transition: width 0.3s;
+    overflow: hidden; // hides everything inside the side nav
+}
+
+.side-nav-close {
+    width: 0px;
+}
+
+.nav-links {
+    transition: 0.3s;
+    padding-top: clamp(70px, 15vh, 200px);
+
+    .nav-link {
+        height: clamp(30px, 5vw, 60px);
+        color: #818181; 
+        display: flex;
+        justify-content: center;
+               
+        [routerLink] {                                               
+            text-decoration: none;            
+            font-size: min(3vw, 28px);            
+            color: #818181;
+            &:hover, &:focus {
+                color: #f1f1f1;
+            }
+        }
+    }
+}

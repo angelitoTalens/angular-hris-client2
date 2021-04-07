@@ -1,0 +1,19 @@
+.login-container {  
+    padding-top: min(10vh, 150px);  
+    .login-icon {
+        display: flex;
+        justify-content: center;
+        font-size: min(50vw, 200px);
+    }
+    .login-form {          
+        display: flex;
+        justify-content: center;
+
+        form {            
+            padding: 20px;
+            background-color: #e9ecef;      
+            width: min(70vw, 350px);
+            border-radius: 0.4em;
+        }
+    }
+}

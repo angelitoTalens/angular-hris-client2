@@ -1,0 +1,20 @@
+$font-size: min(1em, 3vw);
+$margin: $font-size;
+
+.leave-container {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start;
+    margin: $margin;
+    .leave-calendar {
+        min-width: 50%;        
+    }
+
+    .leave-form { 
+        margin: 0 $margin;               
+        font-size:$font-size;            
+        input {
+            font-size: inherit;
+        }        
+    }
+}

@@ -1,0 +1,9 @@
+<div class="leave-container">
+    <div class="leave-calendar" *ngIf="mediaQuery">
+        <app-leave-calendar [events]="calendarEvents" [refresh]="calendarRefresh"></app-leave-calendar>
+    </div>
+    <div class="leave-form">
+        <app-leave-form (leaveEvent)="addLeave($event)"></app-leave-form>
+    </div>   
+</div>
+

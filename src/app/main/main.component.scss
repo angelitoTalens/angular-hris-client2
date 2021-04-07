@@ -1,0 +1,49 @@
+.main-container {
+    display: flex;
+    overflow: hidden;
+    .content {
+        width: 100vw;
+        
+        .top-bar {
+            height: clamp(30px, 5vh, 60px);
+            font-size: clamp(15px, 2.5vh, 30px);
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: space-between;
+        
+            .toggle-nav, .logout {
+                font-size:inherit;
+                
+                &:focus {
+                    box-shadow: none;
+                }
+                
+                &:hover {
+                    color: #999;
+                }
+                
+                .fa-angle-left {            
+                    color:rgb(92,184,92);
+                    padding-right: 0.2em;
+                }
+                
+                .fa-angle-right {            
+                    color:rgb(92,184,92);
+                    padding-left: 0.2em;
+                }
+            }
+        }
+
+        .page-container {
+            max-height: 90vh;            
+            overflow: auto;            
+        }
+
+        .side-nav-open {
+            max-width: 80vw;
+        }
+    }
+}
+
+
+

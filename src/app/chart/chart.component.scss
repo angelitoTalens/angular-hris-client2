@@ -1,0 +1,38 @@
+.chart {    
+    background-color: #f6f7f8;
+    text-align: center;
+    font-size: 1vw;    
+    border-radius: 0.2em;
+
+    .chart-label {
+        font-size: 1.5em;
+    }
+
+    .chart-area {
+        $padding: 10%;
+        position: relative;
+        padding-top: $padding;
+        padding-bottom: $padding;        
+
+        .chart-label {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    
+    .event-pretext {               
+        min-height: 1.5em;
+        font-size: 1em;      
+    }
+    .event-name {        
+        min-height: 1.5em;
+        font-size: 2em;
+        padding-bottom: 10%;
+    }    
+    .chart-button {
+        font-size: 1em;
+        width: 100%;             
+    }
+}

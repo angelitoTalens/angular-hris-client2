@@ -1,0 +1,36 @@
+$font-size: min(1em, 3vw);
+
+.leave-calendar-container {
+    background-color: #e9ecef;
+    padding: 10px;
+    border-radius: 3px;
+  
+    .calendar-header {
+        position: relative;
+        padding: inherit;
+        display: flex;
+        font-size: $font-size;
+
+        .month-selector {
+            .btn {
+                font-size: $font-size;
+                &:focus {
+                    box-shadow: none;  
+                }
+            }                      
+        }
+      
+        .calendar-label {
+            font-size: 1.5em;
+            font-weight: 500;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    .calendar-board {
+        padding: inherit;         
+    }
+}

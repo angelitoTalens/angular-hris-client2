@@ -1,0 +1,30 @@
+<div class="details-container">
+    <form>
+        <button type="button" class="btn btn-block" (click)="personalDetailsCollapse.toggle()"
+            [attr.aria-expanded]="!isPersonalDetailsHidden">
+            <i class="fas fa-minus-circle" *ngIf="!isPersonalDetailsHidden"></i>
+            <i class="fas fa-plus-circle" *ngIf="isPersonalDetailsHidden"></i>
+            Personal Details
+        </button>
+        <div #personalDetailsCollapse="ngbCollapse" [(ngbCollapse)]="isPersonalDetailsHidden">
+            <div class="form-group" *ngFor="let detail of personalDetails">
+                <label>{{detail.label}}:</label>
+                <input type="text" class="form-control" [name]="detail.label" [(ngModel)]="detail.value">
+            </div>
+        </div>
+    </form>
+    <form>
+        <button type="button" class="btn btn-block" (click)="professionalDetailsCollapse.toggle()"
+            [attr.aria-expanded]="!isProfessionalDetailsHidden">
+            <i class="fas fa-minus-circle" *ngIf="!isProfessionalDetailsHidden"></i>
+            <i class="fas fa-plus-circle" *ngIf="isProfessionalDetailsHidden"></i>
+            Professional Details
+        </button>
+        <div #professionalDetailsCollapse="ngbCollapse" [(ngbCollapse)]="isProfessionalDetailsHidden">
+            <div class="form-group" *ngFor="let detail of professionalDetails">
+                <label>{{detail.label}}:</label>
+                <input type="text" class="form-control" [name]="detail.label" [(ngModel)]="detail.value">
+            </div>
+        </div>
+    </form>
+</div>

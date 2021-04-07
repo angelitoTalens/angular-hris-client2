@@ -1,0 +1,26 @@
+<div class="leave-form-container">
+    <form [formGroup]="leaveForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="leaveType">Leave Type:</label>
+            <select id="leaveType" class="form-control" formControlName="leaveType">
+                <option disabled selected value> -- select an option -- </option>
+                <option [value]="leave.type" *ngFor="let leave of leaveTypes">{{leave.label}}</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="startDate">Start Date:</label>
+            <input id="startDate" type="date" class="form-control" formControlName="startDate" [min]="minDate"
+                [max]="endDate?.value">
+        </div>
+        <div class="form-group">
+            <label for="endDate">End Date:</label>
+            <input id="endDate" type="date" class="form-control" formControlName="endDate"
+                [min]="startDate?.value ? startDate?.value : minDate">
+        </div>
+        <div class="form-group">
+            <label for="reason">Reason:</label>
+            <textarea id="reason" type="text" class="form-control" rows="3" formControlName="reason"></textarea>
+        </div>
+        <button type=submit class="btn btn-success" [disabled]="!leaveForm.valid">Submit</button>
+    </form>
+</div>

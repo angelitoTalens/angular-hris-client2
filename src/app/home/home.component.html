@@ -1,0 +1,32 @@
+<div class="home-container">
+    <div class="charts-container">
+        <app-chart
+            [eventPretext]="payslipChart.eventPretext"
+            [eventName]="payslipChart.eventName"
+            [link]="payslipChart.link"
+            [color]="payslipChart.color"
+            [maxValue]="payslipChart.maxValue"
+            [value]="payslipChart.value"
+            [buttonText]="payslipChart.buttonText">
+        </app-chart>
+        <app-chart
+            [eventPretext]="annualLeaveChart.eventPretext"
+            [eventName]="annualLeaveChart.eventName"
+            [link]="annualLeaveChart.link"
+            [color]="annualLeaveChart.color"
+            [maxValue]="annualLeaveChart.maxValue"
+            [value]="annualLeaveChart.value"
+            [buttonText]="annualLeaveChart.buttonText">
+        </app-chart>
+        <app-chart
+            [eventPretext]="holidayChart.eventPretext"
+            [eventName]="holidayChart.eventName"
+            [link]="holidayChart.link"
+            [color]="holidayChart.color"
+            [maxValue]="holidayChart.maxValue"
+            [value]="holidayChart.value"
+            [buttonText]="holidayChart.buttonText">
+        </app-chart>
+    </div>
+    <div class="news-container">{{news}}</div>
+</div>

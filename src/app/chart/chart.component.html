@@ -1,0 +1,13 @@
+<div class="chart">
+    <div class="chart-area">
+        <div class="chart-label">{{this.centerText}}</div>
+        <canvas baseChart [data]="doughnutChartData" [labels]="doughnutChartLabels" [chartType]="doughnutChartType"
+            [colors]="colors" [options]="options" [legend]="false">
+        </canvas>
+    </div>
+    <div class="event-pretext">{{eventPretext}}</div>
+    <div class="event-name">{{eventName}}</div>
+    <button type="button" class="btn chart-button" style.background-color={{color}} (click)="navigate(link)">
+        {{buttonText}}
+    </button>
+</div>

@@ -1,0 +1,26 @@
+$borderRadius: 3px;
+.home-container {
+    padding: 1.5vw;       
+
+    .charts-container {
+        border-radius: $borderRadius;
+        background-color: #e9ecef;
+        padding: min(1.5vw, 20px);
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        app-chart {
+            width: 30%;
+        }
+    }
+
+    .news-container {
+        border-radius: $borderRadius;
+        font-size: 1vw;
+        margin-top: 1.5em;
+        padding: 1em;
+        background-color: #e9ecef;
+        width: 100%;
+        min-height: 10em;
+    }
+}

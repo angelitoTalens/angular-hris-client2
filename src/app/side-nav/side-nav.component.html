@@ -1,0 +1,24 @@
+<div class="side-nav" [ngClass]="{'side-nav-close': sideNavClosed}">
+    <nav class="nav-links">
+        <div class="nav-link">
+            <a routerLink="/main/home" routerLinkActive="active">
+                <i class="fas fa-home"></i> Home
+            </a>
+        </div>
+        <div class="nav-link">
+            <a routerLink="/main/payslip" routerLinkActive="active">
+                <i class="fas fa-money-bill-wave"></i> Payslip
+            </a>
+        </div>
+        <div class="nav-link">
+            <a routerLink="/main/leave" routerLinkActive="active">
+                <i class="fas fa-calendar-alt"></i> Leave
+            </a>
+        </div>
+        <div class="nav-link">
+            <a routerLink="/main/details" routerLinkActive="active">
+                <i class="fas fa-info-circle"></i> Details
+            </a>
+        </div>
+    </nav>
+</div>

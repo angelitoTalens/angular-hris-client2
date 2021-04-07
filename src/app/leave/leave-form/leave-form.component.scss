@@ -1,0 +1,11 @@
+.leave-form-container {
+    background-color: #e9ecef;
+    padding: min(20px, 4vw);
+    font-size: inherit;
+    border-radius: 3px;
+    width: clamp(200px, 70vw, 300px);
+
+    .form-control {
+        font-size: inherit;
+    }    
+}

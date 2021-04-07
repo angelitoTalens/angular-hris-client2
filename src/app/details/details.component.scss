@@ -1,0 +1,36 @@
+.details-container {
+    font-size: min(3vw, 20px);
+    padding: min(10px, 2vw) min(30px, 5vw);
+    margin: min(20px, 3vw);
+    border-radius: 3px;
+    background-color: #e9ecef;
+    overflow-y: auto;
+
+    .form-control {
+        font-size: inherit;
+    }
+
+    button {       
+        font-size: inherit; 
+        margin: min(10px, 2vw) 0px;
+        text-align: left;
+
+        $color: #f1f1f1;
+        $background-color: #999;
+
+        // remove bootstrap button highlight
+        &:focus {
+            box-shadow: none;
+        }
+
+        &:hover {
+            background-color: $background-color;
+            color: $color;
+        }
+
+        &[aria-expanded="true"] {
+            background-color: $background-color;
+            color: $color;
+        }
+    }
+}
