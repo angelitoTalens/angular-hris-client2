@@ -1,22 +1,37 @@
 $borderRadius: 3px;
 .home-container {
-    padding: 1.5vw;       
+    padding: 1.5vw;
+    font-size: 1.7vmin;
 
-    .charts-container {
+    .charts-container {        
         border-radius: $borderRadius;
         background-color: #e9ecef;
         padding: min(1.5vw, 20px);
         display: flex;
-        justify-content: space-around;
+        justify-content: space-around;        
         flex-wrap: wrap;
-        app-chart {
-            width: 30%;
+        align-items: center;
+        font-size: inherit;
+
+        @media (min-device-width: 568px) {                       
+            flex-direction: row;            
+            app-chart {
+                width: 30%;
+            }                        
+        }
+        
+        @media (max-device-width: 567px) {      
+            flex-direction: column;        
+            app-chart {
+                width: 85%;
+                margin: 2em 0;
+            }
         }
     }
 
     .news-container {
-        border-radius: $borderRadius;
-        font-size: 1vw;
+        border-radius: $borderRadius;  
+        font-size: inherit;
         margin-top: 1.5em;
         padding: 1em;
         background-color: #e9ecef;
