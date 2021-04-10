@@ -17,8 +17,8 @@ export class LeaveComponent implements OnInit {
 
   calendarEvents: CalendarEvent<{ incrementsBadgeTotal: boolean }>[] = [];
   calendarRefresh: Subject<any> = new Subject();
-  readonly mediumWidth = "(min-width: 768px)";
-  mediaQuery = window.matchMedia(this.mediumWidth).matches;  
+  // readonly mediumWidth = "(min-width: 768px)";
+  // mediaQuery = window.matchMedia(this.mediumWidth).matches;  
 
   constructor(private leaveService: LeaveService) { }
 
@@ -91,8 +91,8 @@ export class LeaveComponent implements OnInit {
       });
   }
 
-  @HostListener("window:resize", [])
-  private onResize() {
-    this.mediaQuery = window.matchMedia(this.mediumWidth).matches;
-  }
+  // @HostListener("window:resize", [])
+  // private onResize() {
+  //   this.mediaQuery = window.matchMedia(this.mediumWidth).matches;
+  // }
 }

@@ -7,12 +7,12 @@ $margin: $font-size;
     align-items: flex-start;
     margin: $margin;
     .leave-calendar {
-        min-width: 50%;        
+        width: min(70vw, 800px);
     }
 
     .leave-form { 
         margin: 0 $margin;               
-        font-size:$font-size;            
+        font-size:$font-size;              
         input {
             font-size: inherit;
         }        
